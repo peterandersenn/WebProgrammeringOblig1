@@ -15,7 +15,7 @@
             let mailadresse = document.getElementById("mailadresse").value;
 
             if (!film || !antall || !fornavn || !etternavn || !telefonnr || !mailadresse) {
-                alert("Fyll ut alle feltene før du trykker 'Kjøp billett'");
+                alert("Fyll ut alle feltene etter det de spør om før du trykker 'Kjøp billett'");
                 return;
             }
 
@@ -94,26 +94,32 @@
         <option value="Bukkene bruse på badeland">Bukkene bruse på badeland</option>
     </select>
 </div>
+<br>
 <div>
     <label for="antall">Antall billetter:</label>
     <input type="number" id="antall" min="1" required>
 </div>
+<br>
 <div>
     <label for="fornavn">Fornavn:</label>
     <input type="text" id="fornavn" required>
 </div>
+<br>
 <div>
     <label for="etternavn">Etternavn:</label>
     <input type="text" id="etternavn" required>
 </div>
+<br>
 <div>
     <label for="telefonnr">Telefonnr:</label>
     <input type="text" id="telefonnr" pattern="\d{8}" required>
 </div>
+<br>
 <div>
     <label for="mailadresse">Epost:</label>
     <input type="email" id="mailadresse" required>
 </div>
+<br>
 <button onclick="kjopBillett()">Kjøp billett</button>
 <h2>Alle billetter</h2>
 <ul id="billettListe"></ul>
